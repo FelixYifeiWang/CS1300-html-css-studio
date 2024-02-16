@@ -1,20 +1,62 @@
 #logoBar{
   width: 30vw;
   height: 100vh;
+  color:chartreuse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #siteLogo{
   width: 100%;
 }
 body {
   display: flex;
+  background-color:darkgreen;
 }
 #staffGallery{
   width: 70vw;
   display: inherit;
-
 }
 .galleryImage{
   width: 100%;
   height: auto;
   height: 300px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 200px; 
+  height: 300px;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  margin: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-size: 16px;
+  color:aquamarine
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  #logoBar, #staffGallery {
+    width: 100%; 
+    height: auto; 
+  }
+
+  #logoBar {
+    height: auto;
+  }
 }
