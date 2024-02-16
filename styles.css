@@ -20,13 +20,11 @@ body {
   height: auto;
   height: 300px;
 }
-
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
-
 .card {
   width: 200px; 
   height: 300px;
@@ -35,27 +33,22 @@ body {
   text-align: center;
   margin: 15px;
 }
-
 .card img {
   width: 100%;
   height: auto;
 }
-
 .card h3 {
   font-size: 16px;
-  color:aquamarine
+  color:chartreuse
 }
-
 @media (max-width: 600px) {
   body {
     flex-direction: column;
   }
-
   #logoBar, #staffGallery {
     width: 100%; 
     height: auto; 
   }
-
   #logoBar {
     height: auto;
   }
